@@ -28,6 +28,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 		catch (Exception e)
 		{
 			System.out.println(e.getMessage());
+			System.out.println("category not added");
 			return false;
 		}
 	}
