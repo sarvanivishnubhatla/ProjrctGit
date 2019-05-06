@@ -36,12 +36,13 @@ public class CategoryDAOImpl implements CategoryDAO {
 		try {
 			Session session=sessionFactory.getCurrentSession();
 			session.update(category);
-			System.out.println("New Category Added");
+			System.out.println(" Category updated");
 			return true;
 		}
 		catch (Exception e)
 		{
 			System.out.println(e.getMessage());
+			System.out.println(" Category not updated");
 			return false;
 		}
 	}
